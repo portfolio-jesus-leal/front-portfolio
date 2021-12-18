@@ -12,16 +12,25 @@
   //grid-gap: 10px;
   //justify-items: center;
 
+  &__left {
+    grid-column: 1fr;
+    grid-row: span 4;
+  }
+
+  &__right {
+    grid-column: 1fr;
+    grid-row: span 4;
+  }
+
+  &__central {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
   &__project {
     grid-column: 1fr;
     grid-row: 1fr;
     margin: auto;
     animation-duration: 2s;
   }
-
-  &__central {
-    grid-column: span 3;
-    grid-row: span 3;
-  }
-
 }
