@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import '~animate.css';
+
+// Variables for screen size control
+$mobile_breakpoint          : 576px;
+$tablet_breakpoint          : 768px;
+$tablet_landscape_breakpoint: 992px;
+$desktop_breakpoint         : 1200px;
+$desktop_xl_breakpoint      : 1600px;
+
+// Mixin for media query
+
+@mixin mobile {
+  @media only screen and (max-width: #{$mobile_breakpoint}) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: #{$tablet_breakpoint}) {
+      @content;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color          : inherit;
+}

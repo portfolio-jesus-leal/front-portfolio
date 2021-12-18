@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.webcard {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  // max-width: 30vw;
+  // max-height: 30vh;
+
+  &__img {
+    max-width: inherit;
+    width: 20vw;
+    height: 20vh;
+  }
+}
