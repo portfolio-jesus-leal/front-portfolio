@@ -7,7 +7,7 @@ const Modal = ({ handleAccept, show, children }) => {
 
   return (
     <div className={showHideClassName}>
-      <section className="modal animate-opacity">
+      <section className="modal__section animate-opacity">
         <span class="modal__close" onClick={handleAccept}>&times;</span>
         {children}
       </section>
