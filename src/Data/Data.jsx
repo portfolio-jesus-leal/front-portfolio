@@ -6,7 +6,7 @@ export const Data = [
     title: "Maleteo",
     repository: "https://github.com/portfolio-jesus-leal/maleteo-project-back",
     description: "",
-    link: "#",
+    link: "",
   },
   {
     type: 1,

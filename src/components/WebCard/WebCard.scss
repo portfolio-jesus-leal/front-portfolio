@@ -1,11 +1,12 @@
 @import "../../index.scss";
 
 .webcard {
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 5px 10px 8px #888888;
+  //border: 1px solid black;
+  //border-radius: 10px;
+  //box-shadow: 5px 10px 8px #888888;
   // max-width: 30vw;
   // max-height: 30vh;
+  margin: 0.4rem 0;
 
   &__img {
     max-width: inherit;
@@ -13,28 +14,37 @@
     height: 20vh;
   }
 
-  & .modal {
-    &__title {
-      font-weight: bold;
-      margin: 1rem 0;
-      text-align: center;
-      font-size: 1.5rem;
+  &__link {
+    &:hover {
+      cursor: pointer;
     }
+  }
+}
 
-    &__img {
-      width: 50%;
-      margin: auto;
-      display: flex;
-    }
+.modal {
 
-    &__link-group {
-      display: flex;
-      justify-content: center;
-    }
+  font-family: 'Roboto', sans-serif;
+  
+  &__title {
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
-    &__link {
-      width: 150px;
-      margin: 0 1rem;
-    }
+  &__img {
+    width: 50%;
+    margin: auto;
+    display: flex;
+  }
+
+  &__link-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    width: 150px;
+    margin: 0 1rem;
   }
 }

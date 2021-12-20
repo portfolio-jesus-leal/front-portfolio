@@ -3,7 +3,7 @@
 .centralcard {
   border: 1px solid black;
   max-width: 50vw;
-  max-height: 30vh;
+  //max-height: 30vh;
   display: contents;
 
   &__img {
@@ -109,13 +109,7 @@ $footer-color               : white;
     }
 
     &__text {
-        display  : block;
-        font-size: 1.5rem;
         margin   : auto;
-
-        @include mobile {
-            font-size: unset;
-        }
     }
 
     &__logo {
@@ -198,14 +192,6 @@ $footer-color               : white;
     }
 }
 
-.card-flex-space-around {
-    display        : flex;
-    flex-direction : row;
-    flex-wrap      : wrap;
-    justify-content: space-around;
-    align-items    : center;
-}
-
 .card-centered {
     text-align : center;
     align-items: center;
@@ -229,31 +215,6 @@ $footer-color               : white;
     margin-bottom : 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom : 0.3rem solid black;
-}
-
-.slot-space {
-    margin: 2% 0;
-
-    &+.card {
-        margin: 5% 0;
-    }
-}
-
-
-.w-100 {
-    width: 100%;
-}
-
-.w-70 {
-    width: 70%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-30 {
-    width: 30%;
 }
 
 .margin-auto {
