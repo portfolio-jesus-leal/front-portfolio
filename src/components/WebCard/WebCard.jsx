@@ -28,7 +28,6 @@ const WebCard = ({ project }) => {
   return (
     <>
       <Paper elevation={3} className="webcard">
-      
         {project.type === 1 && (
           <img
             className="webcard__img"
@@ -41,46 +40,48 @@ const WebCard = ({ project }) => {
 
         {project.type === 2 && (
           <div
-            className="webcard__img"
+            className="webcard__empty"
             style={{ backgroundColor: project.color }}
           ></div>
         )}
-
-        <Modal
-          handleAccept={handleAccept}
-          show={activeModal}
-          children={
-            <div className="modal">
-              <img
-                className="modal__img"
-                src={project.img}
-                alt={project.title}
-              ></img>
-              <div className="modal__title">{details.title}</div>
-              <div
-                className="modal__description"
-                dangerouslySetInnerHTML={{ __html: project.description }}
-              ></div>
-              <div className="modal__link-group">
-                {project.repository && (
-                  <a href={project.repository} target="_blank" rel="noreferrer">
-                    <Button variant="contained" className="modal__link">
-                      Repositorio
-                    </Button>
-                  </a>
-                )}
-                {project.link && (
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    <Button variant="contained" className="modal__link">
-                      Demo
-                    </Button>
-                  </a>
-                )}
-              </div>
-            </div>
-          }
-        />
       </Paper>
+
+      <div className="webcard__modal">
+      <Modal
+        handleAccept={handleAccept}
+        show={activeModal}
+        children={
+          <div className="modal">
+            <img
+              className="modal__img"
+              src={project.img}
+              alt={project.title}
+            ></img>
+            <div className="modal__title">{details.title}</div>
+            <div
+              className="modal__description"
+              dangerouslySetInnerHTML={{ __html: project.description }}
+            ></div>
+            <div className="modal__link-group">
+              {project.repository && (
+                <a href={project.repository} target="_blank" rel="noreferrer">
+                  <Button variant="contained" className="modal__link">
+                    Repositorio
+                  </Button>
+                </a>
+              )}
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <Button variant="contained" className="modal__link">
+                    Demo
+                  </Button>
+                </a>
+              )}
+            </div>
+          </div>
+        }
+      />
+      </div>
     </>
   );
 };

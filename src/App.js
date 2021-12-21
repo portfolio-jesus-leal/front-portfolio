@@ -15,8 +15,8 @@ function App() {
 
   const initApp = () => {
     setIsLoading(false);
-    //setInterval(updateList, 5000);
-    updateList();
+    setInterval(updateList, 5000);
+    //updateList();
 
     console.log("listProjects[0]->", listProjects[0]);
     console.log("Data->", Data);
@@ -50,16 +50,16 @@ function App() {
         <div className="App">
 
           <div className="App__left">
-            <div className="App__project animate__fadeInDownBig">
+            <div className="App__project animate__fadeInLeft animate__slow">
               <WebCard project={listProjects[0]} />
             </div>
-            <div className="App__project animate__bounceInDown">
+            <div className="App__project animate__fadeInLeft animate__delay-3s">
               <WebCard project={listProjects[1]} />
             </div>
-            <div className="App__project animate__fadeInLeft">
+            <div className="App__project animate__fadeInLeft animate__delay-4s">
               <WebCard project={listProjects[2]} />
             </div>
-            <div className="App__project animate__fadeInUpBig">
+            <div className="App__project animate__fadeInLeft animate__delay-5s">
               <WebCard project={listProjects[3]} />
             </div>
           </div>
@@ -69,7 +69,7 @@ function App() {
           </div>
 
           <div className="App__right">
-            <div className="App__project animate__zoomInDown">
+            <div className="App__project animate__fadeInRight">
               <WebCard project={listProjects[4]} />
             </div>
             <div className="App__project animate__fadeInRight">
@@ -78,7 +78,7 @@ function App() {
             <div className="App__project animate__fadeInRight">
               <WebCard project={listProjects[6]} />
             </div>
-            <div className="App__project animate__fadeInUpBig">
+            <div className="App__project animate__fadeInRight">
               <WebCard project={listProjects[7]} />
             </div>
           </div>

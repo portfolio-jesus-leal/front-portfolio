@@ -72,6 +72,6 @@ export const Data = [
   },
   {
     type: 2,
-    color: "lightblue",
+    color: "#ff8500",
   },
 ];

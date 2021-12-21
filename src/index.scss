@@ -25,6 +25,14 @@ $desktop_xl_breakpoint      : 1600px;
 body {
   margin: 0;
   font-family: 'Fredoka One', cursive;
+  background-color:#3757D0;
+  background-image:radial-gradient(#81BCFF, #303391);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:#fff;
+  text-align:center;
+  overflow: hidden;
 }
 
 code {
