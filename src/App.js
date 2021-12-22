@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import "./App.scss";
 import WebCard from "./components/WebCard/WebCard";
 import CentralCard from "./components/CentralCard/CentralCard";
 import Spinner from "./components/Spinner/Spinner";
-import { Data } from "./Data/Data";
+import { Data } from "./data/Data";
+import { Context } from "./components/Wrapper/Wrapper";
 
 function App() {
+
+  const context = useContext(Context);
+
   const [isLoading, setIsLoading] = useState(true);
   const [listProjects, setListProjects] = useState(Data);
 
@@ -45,6 +49,13 @@ function App() {
 
   return (
     <>
+      <header className="App__header">
+        <select value={context.locale} onChange={context.selectLanguage}>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+      </header>
+
       {isLoading && <Spinner />}
       {!isLoading && (
         <div className="App">

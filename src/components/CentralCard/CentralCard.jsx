@@ -1,24 +1,37 @@
 import React from "react";
 import "./CentralCard.scss";
+import { FormattedMessage } from "react-intl";
 
 const CentralCard = () => {
   return (
     <div className="centralcard">
       <div className="centralcard__text--big text-animated">
-        ¡Bienvenido a mi portafolio!
+        <FormattedMessage
+          id="app.header"
+          defaultMessage="¡Bienvenido a mi portafolio!"
+        />
       </div>
 
       <div className="centralcard__text--medium at-item">
-        !Hola¡ Soy Jesús Leal, desarrollador web Full Stack
+        <FormattedMessage
+          id="app.content"
+          defaultMessage="!Hola¡ Soy Jesús Leal, desarrollador web Full Stack"
+        />
       </div>
 
       <div className="centralcard__text--regular at-item">
-        Aquí os muestro algunas cosas que he hecho.
+        <FormattedMessage
+          id="app.description"
+          defaultMessage="Aquí os muestro algunas cosas que he hecho hasta ahora"
+        />
       </div>
 
       <div className="centralcard__rrss">
         <div className="centralcard__text--mini at-item">
-          Me puedes encontrar en estas redes sociales:
+          <FormattedMessage
+            id="app.rrss"
+            defaultMessage="Me puedes encontrar en estas redes sociales:"
+          />
         </div>
 
         <span className="centralcard__logo">

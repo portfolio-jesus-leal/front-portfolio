@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../Modal/Modal";
-import { Data } from "../../Data/Data";
+import { Data } from "../../data/Data";
 import { Button, Paper } from "@mui/material";
 import "./WebCard.scss";
 
