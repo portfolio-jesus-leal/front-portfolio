@@ -54,24 +54,24 @@ const WebCard = ({ project }) => {
           <div className="modal">
             <img
               className="modal__img"
-              src={project.img}
-              alt={project.title}
+              src={details.img}
+              alt={details.title}
             ></img>
             <div className="modal__title">{details.title}</div>
             <div
               className="modal__description"
-              dangerouslySetInnerHTML={{ __html: project.description }}
+              dangerouslySetInnerHTML={{ __html: details.description }}
             ></div>
             <div className="modal__link-group">
-              {project.repository && (
-                <a href={project.repository} target="_blank" rel="noreferrer">
+              {details.repository && (
+                <a href={details.repository} target="_blank" rel="noreferrer">
                   <Button variant="contained" className="modal__link">
                     Repositorio
                   </Button>
                 </a>
               )}
-              {project.link && (
-                <a href={project.link} target="_blank" rel="noreferrer">
+              {details.link && (
+                <a href={details.link} target="_blank" rel="noreferrer">
                   <Button variant="contained" className="modal__link">
                     Demo
                   </Button>

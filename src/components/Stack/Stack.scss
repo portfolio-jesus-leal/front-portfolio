@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+.stack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+
+    &__img {
+        width:45px;
+        margin-left: 5px;
+    }
+}

@@ -18,16 +18,39 @@
   &__text {
     text-align: center;
 
+    &--big,
+    &--regular,
+    &--medium,
+    &--mini-title,
+    &--mini {
+      transition-duration: 0.2s;
+
+      &:hover {
+        transform: scale(110%);
+      }
+    }
+
     &--big {
       font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
     }
 
     &--medium {
-        font-size: 2.5rem;
-      }
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: -1px;
+      line-height: 1.3;
+    }
 
     &--regular {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+    }
+
+    &--mini-title {
+      font-size: 1.2rem;
+      font-weight: 800;
     }
 
     &--mini {
@@ -37,24 +60,10 @@
     @include mobile {
       &--big,
       &--regular,
+      &--medium,
+      &--mini-title,
       &--mini {
         font-size: unset;
-      }
-    }
-  }
-
-  &__logo {
-    margin-right: 10px;
-
-    &-img {
-      width: 5%;
-      max-width: 3.2rem;
-      border-radius: 50%;
-      margin-top: 0.62rem;
-      transition-duration: 0.2s;
-
-      &:hover {
-        transform: scale(120%);
       }
     }
   }
@@ -82,7 +91,6 @@
     animation-iteration-count: infinite;
   }
 }
-
 
 .text-animated {
   //text-transform: uppercase;
